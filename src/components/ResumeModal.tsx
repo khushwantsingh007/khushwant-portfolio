@@ -89,15 +89,27 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               Contact Number: 9758774335 | Email : khushwantsingh8587@gmail.com
             </p>
             <div className="flex flex-wrap items-center justify-center gap-2 text-xs text-blue-700 pt-0.5">
-              <a href="https://khushwantsingh007.github.io/" target="_blank" rel="noreferrer" className="underline hover:text-blue-900">Portfolio</a>
+              <a
+                href={profile.socials.portfolio}
+                target="_blank"
+                rel="noreferrer"
+                className="underline hover:text-blue-900 font-medium"
+                onClick={(e) => {
+                  e.preventDefault();
+                  onClose();
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
+              >
+                Portfolio
+              </a>
               <span>|</span>
-              <a href="https://github.com/khushwantsingh007" target="_blank" rel="noreferrer" className="underline hover:text-blue-900">Github</a>
+              <a href={profile.socials.github} target="_blank" rel="noreferrer" className="underline hover:text-blue-900">Github</a>
               <span>|</span>
-              <a href="https://www.linkedin.com/in/khushwat-singh-2511542b6" target="_blank" rel="noreferrer" className="underline hover:text-blue-900">Linkedin</a>
+              <a href={profile.socials.linkedin} target="_blank" rel="noreferrer" className="underline hover:text-blue-900">Linkedin</a>
               <span>|</span>
-              <a href="https://leetcode.com/u/khushwant007/" target="_blank" rel="noreferrer" className="underline hover:text-blue-900">Leetcode</a>
+              <a href={profile.socials.leetcode} target="_blank" rel="noreferrer" className="underline hover:text-blue-900">Leetcode</a>
               <span>|</span>
-              <a href="https://www.codechef.com/users/khushwant8587" target="_blank" rel="noreferrer" className="underline hover:text-blue-900">Codechef</a>
+              <a href={profile.socials.codechef} target="_blank" rel="noreferrer" className="underline hover:text-blue-900">Codechef</a>
             </div>
           </div>
 

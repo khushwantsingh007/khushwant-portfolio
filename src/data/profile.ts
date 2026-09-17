@@ -27,7 +27,7 @@ export const profile = {
   },
 
   socials: {
-    portfolio: "https://khushwantsingh007.github.io/",
+    portfolio: "https://khushwant-portfolio-iota.vercel.app/",
     github: "https://github.com/khushwantsingh007",
     linkedin: "https://www.linkedin.com/in/khushwat-singh-2511542b6",
     leetcode: "https://leetcode.com/u/khushwant007/",
