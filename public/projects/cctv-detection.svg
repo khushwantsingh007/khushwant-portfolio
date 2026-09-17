@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" fill="none">
+  <rect width="1200" height="700" rx="16" fill="#090d16"/>
+  <!-- Ambient Grid -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1e293b" stroke-width="0.75" stroke-opacity="0.4"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="700" fill="url(#grid)" />
+
+  <!-- Top Video Metadata Bar -->
+  <rect x="30" y="25" width="1140" height="48" rx="8" fill="#111827" stroke="#1f293d" stroke-width="1"/>
+  <text x="50" y="55" fill="#38bdf8" font-family="'JetBrains Mono', monospace" font-size="13" font-weight="700">FEED: RTSP://192.168.1.120:554/live/ch0</text>
+  <text x="450" y="55" fill="#94a3b8" font-family="'JetBrains Mono', monospace" font-size="12">RES: 1920x1080 • FORMAT: MJPEG • BACKEND: OpenCV cv2.VideoCapture</text>
+  <rect x="1010" y="34" width="140" height="30" rx="6" fill="#1e1b4b" stroke="#6366f1" stroke-width="1"/>
+  <text x="1025" y="54" fill="#a5b4fc" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">YOLOv8x-INFER</text>
+
+  <!-- Large Viewport -->
+  <g transform="translate(30, 90)">
+    <rect width="1140" height="570" rx="12" fill="#0d1527" stroke="#334155" stroke-width="1.5"/>
+    
+    <!-- Horizon / Perspective lines -->
+    <line x1="0" y1="360" x2="1140" y2="360" stroke="#1e293b" stroke-width="1.5"/>
+    <line x1="150" y1="570" x2="520" y2="360" stroke="#1e293b" stroke-dasharray="6 6"/>
+    <line x1="990" y1="570" x2="620" y2="360" stroke="#1e293b" stroke-dasharray="6 6"/>
+
+    <!-- Polygon Restricted Area (Drawn on canvas) -->
+    <polygon points="180,240 620,220 740,480 80,490" fill="rgba(239, 68, 68, 0.12)" stroke="#ef4444" stroke-width="2.5"/>
+    <rect x="190" y="250" width="280" height="26" rx="4" fill="#7f1d1d"/>
+    <text x="200" y="268" fill="#fecaca" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">ZONE-1 [RESTRICTED] • cv2.pointPolygonTest</text>
+
+    <!-- Detected Target 1: Breaching Person -->
+    <rect x="360" y="260" width="130" height="210" rx="4" fill="none" stroke="#ef4444" stroke-width="2.5"/>
+    <rect x="360" y="235" width="170" height="24" rx="4" fill="#ef4444"/>
+    <text x="370" y="252" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">ID: #104 person 0.96</text>
+    <!-- Tracking Trail -->
+    <polyline points="280,480 320,440 370,420 425,465" fill="none" stroke="#ef4444" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="425" cy="465" r="5" fill="#ef4444"/>
+    <text x="435" y="470" fill="#ef4444" font-family="'JetBrains Mono', monospace" font-size="10">Ground Contact (inside)</text>
+
+    <!-- Detected Target 2: Vehicle -->
+    <rect x="750" y="320" width="260" height="170" rx="4" fill="none" stroke="#38bdf8" stroke-width="2.5"/>
+    <rect x="750" y="295" width="150" height="24" rx="4" fill="#0284c7"/>
+    <text x="760" y="312" fill="#ffffff" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700">ID: #88 car 0.91</text>
+    <polyline points="650,440 730,430 880,485" fill="none" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4"/>
+    <circle cx="880" cy="485" r="5" fill="#38bdf8"/>
+
+    <!-- Virtual Tripwire (Line Crossing Vector) -->
+    <line x1="60" y1="420" x2="1080" y2="420" stroke="#a855f7" stroke-width="2.5" stroke-dasharray="8 6"/>
+    <!-- Direction arrow -->
+    <polygon points="600,405 615,420 600,435" fill="#a855f7"/>
+    <rect x="490" y="390" width="220" height="22" rx="4" fill="#581c87"/>
+    <text x="500" y="406" fill="#f3e8ff" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700">VIRTUAL TRIPWIRE (CROSS PRODUCT DETECT)</text>
+
+    <!-- Corner Target Crosshairs -->
+    <path d="M 20 20 L 20 50 M 20 20 L 50 20" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M 1120 20 L 1120 50 M 1120 20 L 1090 20" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M 20 550 L 20 520 M 20 550 L 50 550" stroke="#38bdf8" stroke-width="2"/>
+    <path d="M 1120 550 L 1120 520 M 1120 550 L 1090 550" stroke="#38bdf8" stroke-width="2"/>
+
+    <!-- Bottom Telemetry Pill Overlay -->
+    <rect x="30" y="515" width="460" height="36" rx="6" fill="rgba(15, 23, 42, 0.85)" stroke="#334155" stroke-width="1"/>
+    <circle cx="50" cy="533" r="4" fill="#22c55e"/>
+    <text x="65" y="537" fill="#f1f5f9" font-family="'JetBrains Mono', monospace" font-size="11">YOLOv8 Inference: 11.8ms • IoU Tracker: 1.4ms • 30 FPS Lock</text>
+  </g>
+</svg>
