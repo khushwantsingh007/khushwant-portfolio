@@ -5,8 +5,8 @@ export const Resume: React.FC = () => {
   const [downloadNotice, setDownloadNotice] = useState<string | null>(null);
 
   const handleDownload = () => {
-    setDownloadNotice("Downloading resume.pdf... Note: you can replace public/resume.pdf with your latest CV anytime.");
-    setTimeout(() => setDownloadNotice(null), 5000);
+    setDownloadNotice("Downloading Khushwant_Singh_Resume.pdf...");
+    setTimeout(() => setDownloadNotice(null), 4000);
   };
 
   return (

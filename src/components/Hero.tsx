@@ -61,7 +61,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenResume }) => {
 
             {/* Supporting Bio Text */}
             <p className="text-base sm:text-lg text-foreground-muted leading-relaxed max-w-2xl font-normal">
-              I'm <span className="text-foreground font-semibold">Khushwant Singh</span>, a Computer Science student and software developer focused on full-stack development, AI-powered applications, and computer vision. Grounded in CS fundamentals, I build reliable, production-minded systems from edge inference to modern web interfaces.
+              I'm <span className="text-foreground font-semibold">Khushwant Singh</span>, an Aspiring Cloud Engineer and Backend Developer with experience in building robust web applications. Proficient in modern web technologies like JavaScript, Node.js, and SQL, with a strong focus on security, performance, and user experience.
             </p>
 
             {/* CTAs */}

@@ -9,13 +9,13 @@ interface TerminalLine {
 
 const INITIAL_LINES: TerminalLine[] = [
   { type: 'cmd', content: 'whoami' },
-  { type: 'output', content: 'Khushwant Singh — Software Developer' },
+  { type: 'output', content: "Khushwant Singh — Backend Developer & Cloud Engineer (B.Tech '27)" },
   { type: 'cmd', content: 'cat /etc/focus.conf' },
-  { type: 'output', content: 'Full-Stack Development • AI & Computer Vision • System Design' },
+  { type: 'output', content: 'Backend APIs • Cloud Systems • Database Optimization • Edge Vision' },
   { type: 'cmd', content: 'core-stack --list' },
-  { type: 'output', content: 'React • TypeScript • Python • FastAPI • OpenCV • YOLOv8 • MongoDB' },
-  { type: 'cmd', content: 'echo $STATUS' },
-  { type: 'info', content: '● Building Smart CCTV Analytics & ready for SDE roles' },
+  { type: 'output', content: 'Node.js • Express.js • Postgres • SQL • MongoDB • C++ • Python • Docker' },
+  { type: 'cmd', content: 'echo $ACHIEVEMENTS' },
+  { type: 'info', content: '● 350+ LeetCode Solved • 3 Star SQL HackerRank • Whizzact Intern' },
 ];
 
 export const TerminalVisual: React.FC = () => {

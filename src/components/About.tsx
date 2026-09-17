@@ -1,5 +1,5 @@
 import React from 'react';
-import { GraduationCap, Cpu, FolderGit2, ArrowUpRight } from 'lucide-react';
+import { GraduationCap, Cpu, FolderGit2, ArrowUpRight, Server } from 'lucide-react';
 import { profile } from '../data/profile';
 
 export const About: React.FC = () => {
@@ -78,25 +78,25 @@ export const About: React.FC = () => {
               </div>
             </div>
 
-            {/* Card 2: Technical Focus */}
+            {/* Card 2: Backend & Cloud Experience */}
             <div className="p-5 rounded-2xl bg-card border border-border/70 hover:border-accent/40 transition-all duration-200 shadow-sm flex items-start gap-4 group">
               <div className="p-3 rounded-xl bg-surface-secondary text-accent-indigo border border-border/60 group-hover:scale-105 transition-transform">
-                <Cpu className="w-6 h-6 text-indigo-400" />
+                <Server className="w-6 h-6 text-indigo-400" />
               </div>
               <div className="space-y-1">
                 <div className="flex items-center justify-between">
                   <h3 className="font-heading font-semibold text-foreground text-base">
-                    Full-Stack &amp; AI
+                    Backend &amp; Cloud
                   </h3>
                   <span className="text-xs font-mono px-2 py-0.5 rounded bg-surface-secondary text-indigo-400 font-medium">
-                    End-to-End
+                    Whizzact Intern
                   </span>
                 </div>
                 <p className="text-xs font-medium text-foreground-muted">
-                  Full-Stack + Edge Computer Vision
+                  Node.js • Express.js • Postgres
                 </p>
                 <p className="text-xs text-foreground-subtle pt-1">
-                  Connecting high-throughput YOLOv8 &amp; OpenCV backends to interactive, reactive user dashboards.
+                  Engineered RESTful APIs, relational schema modeling, and CRUD optimization.
                 </p>
               </div>
             </div>

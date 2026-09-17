@@ -99,15 +99,15 @@ export const fallbackProjects: Project[] = [
   {
     id: "stock-analysis-AI-project-",
     name: "stock-analysis-AI-project-",
-    title: "AI Stock Analysis & Market Predictor",
-    description: "Quantitative financial analysis engine leveraging machine learning models to analyze market trends, price trajectories, and financial indicators.",
-    technologies: ["JavaScript", "Machine Learning", "Financial Modeling", "Data Analysis"],
+    title: "Stock Analysis – AI Dashboard",
+    description: "Real-time stock dashboard with live market data. Implemented RSI, MACD, Bollinger Bands for technical analysis. Integrated ML models for short-term price prediction with interactive auto-refresh candlestick charts.",
+    technologies: ["JavaScript", "Machine Learning", "Financial Indicators", "RSI / MACD", "Chart.js"],
     category: "AI / ML",
     github: "https://github.com/khushwantsingh007/stock-analysis-AI-project-",
     stars: 0,
     forks: 0,
-    updatedAt: "2026-04-20",
-    highlights: ["Time-Series Evaluation", "Predictive Trend Indicators", "Interactive Financial Charts"]
+    updatedAt: "Dec 2024 – Jan 2025",
+    highlights: ["RSI, MACD & Bollinger Bands", "ML Price Prediction", "Auto-Refresh Candlestick Charts"]
   },
   {
     id: "stock-buy-sell-Using-Greedy-algo-DAA-project",
