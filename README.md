@@ -7,7 +7,7 @@
 
 ## 🌟 Overview
 
-A modern, high-performance personal developer portfolio built for **Khushwant Singh** (Software Developer, Full-Stack Developer, and AI / Computer Vision Developer; B.Tech CSE '27 at Graphic Era Hill University).
+A modern, high-performance personal developer portfolio built by **Khushwant Singh** (Software Developer, Full-Stack Developer, and AI / Computer Vision Developer; B.Tech CSE '27 at Graphic Era Hill University).
 
 The website emphasizes **technical depth, authentic engineering architectures, and visual polish**:
 - **Flagship Project Showcase**: Substantial visual centerpiece dedicated to **Smart CCTV Analytics Platform** (YOLOv8, OpenCV, FastAPI, React, WebSockets, MongoDB, ReportLab).
